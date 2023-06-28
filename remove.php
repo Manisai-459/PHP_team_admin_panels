@@ -2,7 +2,7 @@
   include("database.php");
   include("db2.php");
   $id = $_GET["id"];
-  $sql = "SELECT FROM teamlogin WHERE username = '$id'";
+  $sql = "SELECT * FROM teamlogin WHERE username = '$id'";
   $r = mysqli_query($conn,$sql);
   $row = mysqli_fetch_assoc($r);
   $d = $row['workid'];
