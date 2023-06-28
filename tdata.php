@@ -95,8 +95,8 @@ $row = mysqli_fetch_assoc($r);
                 }
             }
         if($flag){
-            $sql = "INSERT INTO data (fname, lname, mail1, mail2, contact1, contact2, contact3, pguniversityname, pgstate, pgcountry, pgprogtype, pgpassyear, pgspec, uguniversityname, ugstate, ugcountry, ugprogtype, ugpassyear, ugspecialization, githubid, behance, dribble, portfolio,plink, address, state, country, appliedrole, profiletype, excompany, exrole, exfdate, extodate, skill, certifications, clink, plink, workid)
-            VALUES ('$fname', '$lname', '$email1', '$email2', '$num1', '$num2', '$num3', '$puniversity', '$pstate', '$pcountry', '$pprog', '$pyear', '$pspec', '$university', '$ustate', '$ucountry', '$uprog', '$uyear', '$uspec', '$glink', '$blink', '$dlink','$plink', '$purl', '$radd', '$rstate', '$rcountry', '$applied', '$ptype', '$cname', '$role', '$fdate', '$tdate', '$skill', '$c1', '$clink1', '$purl', '$wid')";
+            $sql = "INSERT INTO data (fname, lname, mail1, mail2, contact1, contact2, contact3, pguniversityname, pgstate, pgcountry, pgprogtype, pgpassyear, pgspec, uguniversityname, ugstate, ugcountry, ugprogtype, ugpassyear, ugspecialization, githubid, behance, dribble, portfolio,plink, address, state, country, appliedrole, profiletype, excompany, exrole, exfdate, extodate, skill, certifications, clink, workid)
+            VALUES ('$fname', '$lname', '$email1', '$email2', '$num1', '$num2', '$num3', '$puniversity', '$pstate', '$pcountry', '$pprog', '$pyear', '$pspec', '$university', '$ustate', '$ucountry', '$uprog', '$uyear', '$uspec', '$glink', '$blink', '$dlink','$plink', '$purl', '$radd', '$rstate', '$rcountry', '$applied', '$ptype', '$cname', '$role', '$fdate', '$tdate', '$skill', '$c1', '$clink1', '$wid')";
              mysqli_query($con,$sql);
              $_POST = array();
              unset($_POST["submit"]);
